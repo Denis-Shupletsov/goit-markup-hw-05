@@ -420,17 +420,26 @@ img {
 .figure-link-website {
     position: relative;
 }
+.figure-link-website:hover::before {
+    opacity: 1;
+}
+
+
+
+
 
 .figure-link-website::before {
+    display: inline-block;
     content: "";
-    width: 370px;
-    height: 294px;
-    background-color: var(--focus-color);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    
+    opacity: 0;
 }
 
 .website-resource {
-    
-
     position: absolute;
     top: 63px;
     left: 24px;
@@ -438,6 +447,11 @@ img {
     height: 168px;
 
     opacity: 0;
+
+    color: var(--main-text-color);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
 }
 
 .elements-products {
