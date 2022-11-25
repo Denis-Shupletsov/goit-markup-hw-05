@@ -567,3 +567,13 @@ img {
     fill: currentColor;
 }
 
+        /* backdrop----Молальное окно */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1600px;
+    height: 1024px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
