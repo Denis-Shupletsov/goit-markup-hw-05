@@ -407,15 +407,43 @@ img {
     box-sizing: border-box;
 }
 
+.figure-link {
+    display: block;
+    text-decoration: none;
+    
+}
+
+.figure-link:hover .website-resource {
+    opacity: 1;
+}
+
+.figure-link-website {
+    position: relative;
+}
+
+.figure-link-website::before {
+    content: "";
+    width: 370px;
+    height: 294px;
+    background-color: var(--focus-color);
+}
+
+.website-resource {
+    
+
+    position: absolute;
+    top: 63px;
+    left: 24px;
+    width: 322px;
+    height: 168px;
+
+    opacity: 0;
+}
+
 .elements-products {
     padding: 20px 24px;
     border:  1px solid #EEEEEE;
     border-top: none;
-}
-
-.figure-link {
-    display: block;
-    text-decoration: none;  
 }
 
 .figure-link:hover {
