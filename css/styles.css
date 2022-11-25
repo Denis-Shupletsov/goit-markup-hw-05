@@ -577,3 +577,14 @@ img {
     height: 1024px;
     background-color: rgba(0, 0, 0, 0.2);
 }
+
+.modal {
+    width: 528px;
+    height: 581px;
+    background-color: var(--main-text-color);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
