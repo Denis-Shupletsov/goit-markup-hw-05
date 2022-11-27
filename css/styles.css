@@ -293,6 +293,29 @@ img {
     height: auto;
 }
 
+.works {
+    position: relative;
+}
+
+.works-applications {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    
+    width: 370px;
+    height: 70px;
+    
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    
+    color: var(--main-text-color);
+    background-color: rgba(47, 48, 58, 0.8);
+}
 /* ----------section-team--------- */
 .section-team {
     background-color: #F5F4FA;
