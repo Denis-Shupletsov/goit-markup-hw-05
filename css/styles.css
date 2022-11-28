@@ -243,6 +243,11 @@ h1,h2,h3,h4,h5,h6,p,ul,li {
     line-height: 1.63;
     text-align: center;
     font-family: inherit;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .hero-filter .button-portfolio:focus,
@@ -479,10 +484,6 @@ img {
     position: relative;
 }
 
-.figure-link:hover .website-resource {
-    opacity: 1;
-}
-
 .website-resource {
     position: absolute;
     top: 0px;
@@ -499,6 +500,12 @@ img {
     padding: 63px 24px;
 
     opacity: 0;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.figure-link:hover .website-resource {
+    opacity: 1;
 }
 
 .elements-products {
@@ -646,6 +653,7 @@ img {
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
+    visibility: hidden;
 }
 
 .modal {
