@@ -121,7 +121,7 @@ h1,h2,h3,h4,h5,h6,p,ul,li {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-
+    
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -485,6 +485,7 @@ img {
 
 .figure-link-website {
     position: relative;
+    
 }
 
 .website-resource {
@@ -505,10 +506,14 @@ img {
     opacity: 0;
 
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    transform: translateY(100%);
 }
+
 
 .figure-link:hover .website-resource {
     opacity: 1;
+    transform: translateY(0);
 }
 
 .elements-products {
