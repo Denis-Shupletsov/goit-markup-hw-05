@@ -88,6 +88,8 @@ h1,h2,h3,h4,h5,h6,p,ul,li {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link:hover,
@@ -119,16 +121,13 @@ h1,h2,h3,h4,h5,h6,p,ul,li {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.info-nav-icon-mail {
+.info-nav-icon-mail, .info-nav-icon-mobile  {
     margin-right: 10px;
     fill: currentColor;
-}
-
-.info-nav-icon-mobile {
-    fill: currentColor;
-    margin-right: 10px;
 }
 
 .info-nav-icon-mail .info-nav-icon-mobile:hover {
@@ -191,9 +190,6 @@ h1,h2,h3,h4,h5,h6,p,ul,li {
 }
 
 /* ----------button-studio---------- */
-.button {
-    cursor: pointer;
-}
 
 .button-portfolio {
     cursor: pointer;
@@ -203,6 +199,7 @@ h1,h2,h3,h4,h5,h6,p,ul,li {
     border: 0;
     border-radius: 4px;
     padding: 10px 30px;
+    cursor: pointer;
 
     background-color: var(--focus-color);
 
@@ -212,6 +209,8 @@ h1,h2,h3,h4,h5,h6,p,ul,li {
     line-height: 1.87;
     letter-spacing: 0.06em;
     text-align: center;
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero .button:hover,
@@ -421,6 +420,8 @@ img {
     border-radius: 50%;
     justify-content: center;
     align-items: center;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .soc-icons-link:hover {
@@ -452,6 +453,8 @@ img {
     border-radius: 4px;
 
     color: #AFB1B8;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .company-link:hover {
@@ -501,7 +504,7 @@ img {
 
     opacity: 0;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .figure-link:hover .website-resource {
@@ -569,6 +572,8 @@ img {
     color: var(--main-text-color);
     font-size: 14px;
     line-height: 1.71;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-nav {
@@ -583,6 +588,8 @@ img {
     color: rgba(255, 255, 255, 0.6);
     font-size: 14px;
     line-height: 1.71;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-nav .info-link:hover,
@@ -629,6 +636,8 @@ img {
 
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--main-text-color);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icons-links:hover {
