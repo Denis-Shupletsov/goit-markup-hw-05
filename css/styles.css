@@ -248,7 +248,9 @@ h1,h2,h3,h4,h5,h6,p,ul,li {
     text-align: center;
     font-family: inherit;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     /* transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
@@ -357,6 +359,7 @@ img {
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
+    text-transform: uppercase;
     
     color: var(--main-text-color);
     background-color: rgba(47, 48, 58, 0.8);
@@ -426,7 +429,9 @@ img {
     justify-content: center;
     align-items: center;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+                color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .soc-icons-link:hover {
@@ -459,7 +464,8 @@ img {
 
     color: #AFB1B8;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+                border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .company-link:hover {
@@ -486,6 +492,7 @@ img {
 .figure-link {
     display: block;
     text-decoration: none;
+    transition: box-shadow ;
 }
 
 .figure-link-website {
@@ -656,6 +663,12 @@ img {
     fill: currentColor;
 }
         /* backdrop----Молальное окно */
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -669,17 +682,11 @@ img {
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-}
-
 .modal {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    
 
     min-width: 528px;
     min-height: 581px;
@@ -687,10 +694,13 @@ img {
     background-color: var(--main-text-color);
     border-radius: 4px;
     box-shadow: 0px 2px 1px 0px #00000033;
+    
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(0.9);
 }
 
 .button-modal {
